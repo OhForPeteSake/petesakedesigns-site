@@ -996,3 +996,36 @@ main>section{--section-energy:0;transition:filter .55s ease}.motion-ready main>s
 /* About: keep character visible without covering the player intel. */
 .profile-intel .profile-portrait img{object-fit:contain!important;object-position:center bottom!important}
 @media(max-width:760px){.profile-intel .profile-portrait img{object-position:center bottom!important}}
+
+
+/* V62 - Mobile HUD navigation: scroll to every destination, including CONTACT. */
+@media (max-width: 1024px) {
+  .hud-nav {
+    height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: calc(28px + env(safe-area-inset-bottom));
+    box-sizing: border-box;
+  }
+  .hud-nav .hud-brand { flex-shrink: 0; }
+  .hud-nav .hud-links {
+    flex: 0 0 auto;
+    margin-bottom: 12px;
+  }
+  .hud-nav .hud-links a {
+    min-height: 48px;
+    box-sizing: border-box;
+  }
+  .hud-nav .hud-social,
+  .hud-nav .hud-bottom { flex-shrink: 0; }
+  .hud-nav .hud-bottom { margin-top: 0; }
+  /* Privacy remains accessible when menu closes, never blocks its links. */
+  body.menu-open .cookie-consent-root > .cookie-settings { display: none; }
+  body.menu-open .cookie-consent-root { pointer-events: none; }
+  body.menu-open .cookie-consent-root:has(.cookie-panel:not([hidden])) { pointer-events: auto; }
+  body.menu-open .cookie-consent-root .cookie-panel:not([hidden]) { pointer-events: auto; }
+}
