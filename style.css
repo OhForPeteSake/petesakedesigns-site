@@ -1029,3 +1029,9 @@ main>section{--section-energy:0;transition:filter .55s ease}.motion-ready main>s
   body.menu-open .cookie-consent-root:has(.cookie-panel:not([hidden])) { pointer-events: auto; }
   body.menu-open .cookie-consent-root .cookie-panel:not([hidden]) { pointer-events: auto; }
 }
+
+/* Newsletter: latest editions */
+.newsletter-latest{margin-top:18px;padding:13px 15px;border:1px solid rgba(0,246,255,.22);background:rgba(0,246,255,.035);display:flex;flex-direction:column;gap:9px;min-width:0}
+.newsletter-latest-heading{font-size:10px;letter-spacing:.16em;color:#00f6ff;font-weight:800}
+.newsletter-latest a{color:#e3f8fb;font-size:13px;line-height:1.45;text-decoration:none;overflow-wrap:anywhere}
+.newsletter-latest a:hover{color:#00f6ff;text-decoration:underline}
