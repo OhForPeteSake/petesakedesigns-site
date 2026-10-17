@@ -1035,3 +1035,8 @@ main>section{--section-energy:0;transition:filter .55s ease}.motion-ready main>s
 .newsletter-latest-heading{font-size:10px;letter-spacing:.16em;color:#00f6ff;font-weight:800}
 .newsletter-latest a{color:#e3f8fb;font-size:13px;line-height:1.45;text-decoration:none;overflow-wrap:anywhere}
 .newsletter-latest a:hover{color:#00f6ff;text-decoration:underline}
+
+/* Newsletter hero readability — scoped to this page only */
+body .newsletter-hero h1{opacity:1!important;color:#eaf8fa!important;text-shadow:0 3px 22px rgba(0,0,0,.85),0 0 28px rgba(0,246,255,.16)!important;position:relative;z-index:2}
+body .newsletter-hero h1 span{color:#00f6ff!important;-webkit-text-stroke:0!important;opacity:1!important}
+body .newsletter-hero .eyebrow,body .newsletter-hero .lead,body .newsletter-hero .transmission-status{position:relative;z-index:2}
